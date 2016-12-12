@@ -21,7 +21,9 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">
+$('#txtName').tooltip();
+        </script>
 
         <link rel="stylesheet" type="text/css"
                   href="https://fonts.googleapis.com/css?family=Tangerine">
@@ -126,6 +128,10 @@ body {
 <div class='row'>
 
   <div class='col-xs-12 col-sm-12 col-md-12 col-lg-3'>
+
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Click on this button to search!">Search</button>
+    <input id='txtName' type='text' title='Type in keywords to find something specific!' />
+
 <p class='date'>Oct. 17, 2015</p>
 <p class='byline'>By CARA FITZPATRICK, MICHAEL LaFORGIA and ADAM PLAYFORD</p>
 <p class='byline2'>Photographs by DIRK SHADD</p>
